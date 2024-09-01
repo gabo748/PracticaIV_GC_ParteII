@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'oneWayBindingUFG';
+  tituloAEnviar = 'Titulo enviado desde el padre al hijo';
+  mensajeARecivir: string = ''
+
+  handleDataFromChild(mensaje: string) {
+    this.mensajeARecivir = mensaje;
+  }
+
 }
